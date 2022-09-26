@@ -35,7 +35,6 @@ for row in json_file["response"]:
     available_columns = row.keys()
     if "status" in available_columns:
         if row["status"] == "en-route":
-            flight_info = []
             flights['lat'].append((row['lat']))
             flights['lng'].append((row['lng']))
 f.close()
@@ -69,4 +68,4 @@ folium.plugins.MousePosition().add_to(map)
 # folium.plugins.Geocoder().add_to(map)
 # folium.plugins.MiniMap().add_to(map)
 
-map
+map.save("map.html")
