@@ -14,8 +14,6 @@ with open("my_api_key.txt", "r") as secret:
 # Enter API key from airlabs.co account.
 api_key = my_api_key
 
-#  TEST TEXT
-
 # url variable store url.
 url = "https://airlabs.co/api/v9/flights?"
 
